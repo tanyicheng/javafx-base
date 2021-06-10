@@ -1,0 +1,7 @@
+
+# 过滤文件夹以及目录下的文件
+.idea
+.settings
+.externalToolBuilders
+target
+out

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fxml.MybatisController">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="752.0" prefWidth="1117.0" GridPane.rowIndex="1">
+         <children>
+            <Button layoutX="970.0" layoutY="29.0" mnemonicParsing="false" onAction="#perform" prefHeight="39.0" prefWidth="110.0" text="运行">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <TextArea fx:id="content" layoutX="37.0" layoutY="85.0" prefHeight="228.0" prefWidth="1043.0" />
+            <TextArea fx:id="result" editable="false" layoutX="37.0" layoutY="388.0" prefHeight="281.0" prefWidth="1043.0" />
+            <Label layoutX="37.0" layoutY="341.0" prefHeight="33.0" prefWidth="51.0" text="结果：">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Button layoutX="970.0" layoutY="333.0" mnemonicParsing="false" onAction="#copyResult" prefHeight="39.0" prefWidth="110.0" text="复制结果">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="877.0" layoutY="333.0" mnemonicParsing="false" onAction="#clear" prefHeight="39.0" prefWidth="84.0" text="清空输入框" />
+            <Label layoutX="31.0" layoutY="20.0" text="格式：" />
+            <Label layoutX="789.0" layoutY="20.0" prefHeight="18.0" prefWidth="147.0" text="&lt;- 注：sql和参数要换行" textFill="RED" />
+            <Label fx:id="message" layoutX="95.0" layoutY="349.0" prefHeight="18.0" prefWidth="325.0" textFill="RED" />
+            <TextArea fx:id="demoStr" editable="false" layoutX="76.0" layoutY="21.0" prefHeight="51.0" prefWidth="701.0" text="==&gt;  Preparing: select name,age,address from user where id =  ?    &#10;2020/11/13-15:00:01.196 [xxxxxx_Worker-1] DEBUG c.s.m.s.d.c.C.getUserById - ==&gt; Parameters: 1001(String)" />
+            <Button layoutX="789.0" layoutY="41.0" mnemonicParsing="false" onAction="#copyDemo" text="复制测试" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
