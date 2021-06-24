@@ -327,6 +327,7 @@ public class ListViewDrag extends Application{
 			}
 		});
 
+
 		drag.setOnDragOver(new EventHandler<DragEvent>() {
 			@Override
 			public void handle(DragEvent event) {
