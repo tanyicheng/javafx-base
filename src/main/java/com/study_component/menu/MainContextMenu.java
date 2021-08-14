@@ -41,7 +41,7 @@ public class MainContextMenu extends Application {
         AnchorPane.setTopAnchor(button,50.0);
 
         //右键单击事件
-        button.setOnContextMenuRequested(new EventHandler<ContextMenuEvent>() {
+            button.setOnContextMenuRequested(new EventHandler<ContextMenuEvent>() {
             @Override
             public void handle(ContextMenuEvent event) {
                 Button source = (Button) event.getSource();
